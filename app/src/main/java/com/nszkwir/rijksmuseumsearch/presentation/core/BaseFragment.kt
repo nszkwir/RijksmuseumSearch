@@ -8,8 +8,6 @@ import com.google.android.material.snackbar.Snackbar
 import com.nszkwir.rijksmuseumsearch.common.extensions.setupSnackbar
 import com.nszkwir.rijksmuseumsearch.common.utils.NavigationCommand
 import com.nszkwir.rijksmuseumsearch.presentation.MainActivity
-import com.spitzer.igdbgames.core.BaseViewModel
-
 
 abstract class BaseFragment : Fragment() {
 

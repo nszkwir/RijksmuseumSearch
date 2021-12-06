@@ -1,12 +1,12 @@
 package com.nszkwir.rijksmuseumsearch.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.nszkwir.rijksmuseumsearch.R
+import androidx.appcompat.app.AppCompatActivity
 import com.nszkwir.rijksmuseumsearch.databinding.MainActivityBinding
-import com.nszkwir.rijksmuseumsearch.presentation.main.MainFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: MainActivityBinding

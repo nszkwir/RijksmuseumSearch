@@ -1,7 +1,13 @@
 package com.nszkwir.rijksmuseumsearch.presentation.main
 
-import androidx.lifecycle.ViewModel
+import com.nszkwir.rijksmuseumsearch.domain.MainUseCases
+import com.nszkwir.rijksmuseumsearch.presentation.core.BaseViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class MainViewModel : ViewModel() {
+@HiltViewModel
+class MainViewModel @Inject constructor(
+    private val mainUseCases: MainUseCases
+) : BaseViewModel() {
     // TODO: Implement the ViewModel
 }

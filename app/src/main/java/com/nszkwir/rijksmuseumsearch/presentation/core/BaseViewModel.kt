@@ -1,4 +1,4 @@
-package com.spitzer.igdbgames.core
+package com.nszkwir.rijksmuseumsearch.presentation.core
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
