@@ -1,8 +1,9 @@
-package com.nszkwir.rijksmuseumsearch
+package com.nszkwir.rijksmuseumsearch.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.nszkwir.rijksmuseumsearch.ui.main.MainFragment
+import com.nszkwir.rijksmuseumsearch.R
+import com.nszkwir.rijksmuseumsearch.presentation.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 

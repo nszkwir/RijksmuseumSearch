@@ -1,4 +1,4 @@
-package com.nszkwir.rijksmuseumsearch.ui.main
+package com.nszkwir.rijksmuseumsearch.presentation.main
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
