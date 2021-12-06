@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="snackbarColor">#78C7C7</color>
+
     <color name="Black">#000000</color>
     <color name="Gunmetal">#2C3539</color>
     <color name="Midnight">#2B1B17</color>
