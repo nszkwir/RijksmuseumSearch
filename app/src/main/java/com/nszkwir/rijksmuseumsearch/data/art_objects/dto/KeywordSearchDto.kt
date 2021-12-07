@@ -6,6 +6,6 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class KeywordSearchDto(
-    @SerializedName("count") val count: Int,
+    @SerializedName("count") val count: Int? = 0,
     @SerializedName("artObjects") val artObjects: List<ArtObjectDto>? = listOf(),
 ) : Parcelable

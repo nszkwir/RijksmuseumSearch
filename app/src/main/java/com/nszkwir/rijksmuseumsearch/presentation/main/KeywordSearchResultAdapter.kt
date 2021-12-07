@@ -49,36 +49,42 @@ class KeywordSearchResultAdapter
             itemBinding.longTitle.text = artObject.longTitle
             itemBinding.webLink.text = artObject.webLink
 
-            Picasso.get()
-                .load(artObject.headerImageLink)
-                .placeholder(R.drawable.ic_close_24)
-                .error(R.drawable.ic_close_24)
-                .fit()
-                .into(itemBinding.headerImage, object : Callback {
-                    override fun onSuccess() {
-                        // TODO may implement loading feature
-                    }
+            if (!artObject.headerImageLink.isNullOrEmpty()) {
+                Picasso.get()
+                    .load(artObject.headerImageLink)
+                    .placeholder(R.drawable.ic_close_24)
+                    .error(R.drawable.ic_close_24)
+                    .fit()
+                    .into(itemBinding.headerImage, object : Callback {
+                        override fun onSuccess() {
+                            // TODO may implement loading feature
+                        }
 
-                    override fun onError(e: Exception?) {
-                        // TODO may handle the error
-                    }
-                })
+                        override fun onError(e: Exception?) {
+                            // TODO may handle the error
+                        }
+                    })
+            } else {
+                itemBinding.headerImage.setImageResource(R.drawable.ic_close_24)
+            }
+            if (!artObject.webImageLink.isNullOrEmpty()) {
+                Picasso.get()
+                    .load(artObject.webImageLink)
+                    .placeholder(R.drawable.ic_close_24)
+                    .error(R.drawable.ic_close_24)
+                    .fit()
+                    .into(itemBinding.webImage, object : Callback {
+                        override fun onSuccess() {
+                            // TODO may implement loading feature
+                        }
 
-            Picasso.get()
-                .load(artObject.webImageLink)
-                .placeholder(R.drawable.ic_close_24)
-                .error(R.drawable.ic_close_24)
-                .fit()
-                .into(itemBinding.webImage, object : Callback {
-                    override fun onSuccess() {
-                        // TODO may implement loading feature
-                    }
-
-                    override fun onError(e: Exception?) {
-                        // TODO may handle the error
-                    }
-                })
-
+                        override fun onError(e: Exception?) {
+                            // TODO may handle the error
+                        }
+                    })
+            } else {
+                itemBinding.webImage.setImageResource(R.drawable.ic_close_24)
+            }
 
         }
     }

@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/header_image"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
         android:contentDescription="@null"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/web_image"
@@ -21,8 +21,8 @@
 
     <ImageView
         android:id="@+id/web_image"
-        android:layout_width="200dp"
-        android:layout_height="140dp"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
         android:layout_marginTop="4dp"
         android:contentDescription="@null"
         android:scaleType="fitCenter"
@@ -62,15 +62,17 @@
     <TextView
         android:id="@+id/long_title"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginHorizontal="4dp"
         android:layout_marginTop="10dp"
         android:ellipsize="end"
+        android:maxLines="5"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/header_image"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        tools:text="Long Title" />
+        app:layout_constraintBottom_toTopOf="@+id/web_link"
+        tools:text="@string/tools_text_very_long_title" />
 
     <TextView
         android:id="@+id/web_link"
