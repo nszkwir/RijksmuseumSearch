@@ -5,8 +5,8 @@ import com.nszkwir.rijksmuseumsearch.data.art_objects.result_data.ArtObjectRepos
 
 interface ArtObjectRepository {
     suspend fun keywordSearch(
-        p: Int,
-        ps: Int,
+        p: Int = 0,
+        ps: Int = 10,
         query: String
     ): ArtObjectRepositoryResult<KeywordSearchDto?>
 }

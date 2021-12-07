@@ -12,7 +12,6 @@ import javax.inject.Inject
 class ArtObjectRepositoryImpl @Inject constructor(
     private val service: ArtObjectService,
     private val dispatcher: CoroutineDispatcher = Dispatchers.IO
-
 ) : ArtObjectRepository {
     override suspend fun keywordSearch(
         p: Int,
