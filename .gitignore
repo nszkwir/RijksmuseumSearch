@@ -13,3 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
+/app/src/main/java/com/nszkwir/rijksmuseumsearch/common/network/Credentials.kt
