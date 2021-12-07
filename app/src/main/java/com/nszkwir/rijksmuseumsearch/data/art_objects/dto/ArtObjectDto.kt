@@ -16,4 +16,3 @@ data class ArtObjectDto(
     @SerializedName("webImage") val webImage: WebImageDto,
     @SerializedName("headerImage") val headerImage: WebImageDto,
 ) : Parcelable
-
