@@ -188,7 +188,7 @@ class KeywordSearch : ConstraintLayout {
     }
 
     companion object {
-        const val DEFAULT_HINT_TEXT = "Add keywords to search"
+        const val DEFAULT_HINT_TEXT = "Add keywords"
         var DEFAULT_BACKGROUND_COLOR = R.color.black
         var DEFAULT_DRAWABLE_COLOR = R.color.white
         val states = arrayOf(

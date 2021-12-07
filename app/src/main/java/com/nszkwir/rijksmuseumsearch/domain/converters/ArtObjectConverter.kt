@@ -4,6 +4,7 @@ import com.nszkwir.rijksmuseumsearch.data.art_objects.dto.ArtObjectDto
 import com.nszkwir.rijksmuseumsearch.data.art_objects.dto.KeywordSearchDto
 import com.nszkwir.rijksmuseumsearch.domain.models.ArtObject
 
+// TODO this may be implemented as an Object converter instead extension functions
 internal fun ArtObjectDto.toArtObject(): ArtObject {
     return ArtObject(
         id = this.id,

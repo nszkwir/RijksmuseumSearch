@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Rijksmuseum Search</string>
     <string name="main_fragment_title">Rijksmuseum Search</string>
+    <string name="keyword_search_label">Search art objects from Rijksmuseum database with keywords</string>
 </resources>
