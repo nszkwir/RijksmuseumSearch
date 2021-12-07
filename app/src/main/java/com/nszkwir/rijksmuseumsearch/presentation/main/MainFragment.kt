@@ -56,7 +56,9 @@ class MainFragment : BaseFragment() {
             )
             adapter = keywordSearchResultAdapter
         }
-
+        keywordSearchResultAdapter.setData(
+            viewModel.artObjects.value?.peekContent() ?: arrayListOf()
+        )
         binding.keywordSearch.apply {
             setOnErrorMessage { message ->
                 showErrorMessage(message)
