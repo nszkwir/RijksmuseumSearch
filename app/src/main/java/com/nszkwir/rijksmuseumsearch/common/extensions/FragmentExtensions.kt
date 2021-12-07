@@ -22,12 +22,12 @@ fun Fragment.showSnackbar(text: String, duration: Int) {
 
 fun Fragment.setupSnackbar(
     owner: LifecycleOwner,
-    observedEvent: LiveData<Event<Int>>,
+    observedEvent: LiveData<Event<String>>,
     duration: Int
 ) {
     observedEvent.observe(owner, { event ->
-        event.getContentIfNotHandled()?.let { res ->
-            context?.let { showSnackbar(it.getString(res), duration) }
+        event.getContentIfNotHandled()?.let { message ->
+            context?.let { showSnackbar(message, duration) }
         }
     })
 }
