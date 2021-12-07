@@ -14,8 +14,8 @@ internal fun ArtObjectDto.toArtObject(): ArtObject {
         principalOrFirstMaker = this.principalOrFirstMaker,
         webLink = this.links.web ?: "",
         hasImage = this.hasImage,
-        webImageLink = this.webImage.url,
-        headerImageLink = this.headerImage.url
+        webImageLink = this.webImage.url ?: "",
+        headerImageLink = this.headerImage.url ?: ""
     )
 }
 
