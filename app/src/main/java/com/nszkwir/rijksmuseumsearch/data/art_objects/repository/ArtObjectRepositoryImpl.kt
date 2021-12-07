@@ -22,7 +22,7 @@ class ArtObjectRepositoryImpl @Inject constructor(
             val result = safeCall {
                 service.keywordSearch(
                     p = 0,
-                    ps = 1,
+                    ps = 15,
                     q = query
                 )
             }
