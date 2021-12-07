@@ -51,6 +51,9 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview-selection:1.2.0-alpha01"
     implementation 'com.google.android.flexbox:flexbox:3.0.0'
 
+    // Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
     // Navigation
     implementation "androidx.navigation:navigation-ui-ktx:2.3.5"
     implementation "androidx.navigation:navigation-fragment-ktx:2.3.5"
