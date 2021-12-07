@@ -14,11 +14,6 @@ class ApiClient(
     private val baseUrl: String = BASE_URL
 ) {
 
-    companion object {
-        const val clientId = CLIENT_ID
-        const val token = TOKEN
-    }
-
     private var gson: Gson? = null
     private var retrofit: Retrofit? = null
 
@@ -36,8 +31,6 @@ class ApiClient(
 
         val headers = Interceptor { chain ->
             val request: Request = chain.request().newBuilder()
-                .addHeader("Client-ID", clientId)
-                .addHeader("Authorization", token)
                 .build()
             chain.proceed(request)
         }
